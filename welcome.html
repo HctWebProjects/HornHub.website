@@ -2,6 +2,51 @@
   <head>
   </head>
   <body>
+    <style>
+	@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+	html {
+		background: black;
+		background-size: cover;
+		font-family: 'Roboto', sans-serif;
+		color: white;
+	}
+
+	.box {
+		background: #222222;
+		opacity: 0.75;
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+	}
+
+	.message {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background: #000000;
+		opacity: 1;
+		color: white;
+		text-align: center;
+		width: 33vw;
+		padding: 1vw;
+	}
+
+	a,
+	a:active,
+	a:visited {
+		color: white !important;
+	}
+
+	@media (max-width: 800px) {
+		.message {
+			width: 75vw;
+		}
+	}
+</style>
    
 <h1>Welcome to HornHub, Horner!</h1>
     <video width="500" height="280" controls>
